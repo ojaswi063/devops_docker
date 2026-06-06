@@ -8,3 +8,7 @@ docker run -d \
 
 
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+
+
+#mvn archetype:generate -DgroupId=com.example -DartifactId=myapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
