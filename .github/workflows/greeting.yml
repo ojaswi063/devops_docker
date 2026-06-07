@@ -1,6 +1,6 @@
 name: First-Pipeline
 on: [push]
-job:
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
@@ -14,6 +14,6 @@ job:
 
       - name: Build with maven
         run: mvn clean package
-        
+
       - name: Build Docker Image
         run: docker build -t myapp:${{github.sha}} .
