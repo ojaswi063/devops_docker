@@ -19,4 +19,5 @@ jobs:
         working-directory: myapp
 
       - name: Build Docker Image
+        working-directory: myapp
         run: docker build -t myapp:${{github.sha}} .
